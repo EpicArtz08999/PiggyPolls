@@ -1,0 +1,18 @@
+name: PiggyPolls
+main: PiggyPolls\Main
+version: 1.0.0
+api: [2.0.0]
+load: POSTWORLD
+author: MCPEPIG
+permissions:
+ piggypolls:
+  default: op
+  description: "Allows using all PiggyPolls features" 
+  children:
+    piggypolls.command:
+      default: op
+      description: "Allow using all PiggyAuth commands"
+      children:
+        piggypolls.command.polls:
+          default: true
+          description: "Allow using /polls"
