@@ -13,6 +13,9 @@ permissions:
       default: op
       description: "Allow using all PiggyAuth commands"
       children:
-        piggypolls.command.polls:
+        piggypolls.command.poll:
           default: true
+          description: "Allow using /poll"
+        piggypolls.command.polls:
+          default: op
           description: "Allow using /polls"
